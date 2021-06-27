@@ -1,6 +1,15 @@
 import React from 'react'
 
 function SongCard({artistName, imgCover, songName, album, price, releaseDate, audio}) {
+    let track = new Audio(audio)
+    const play = () => {
+        if(track.paused) {
+            track.play()
+        }
+        else {
+            track.pause()
+        }
+    }
 
     return (
         <div className="card text-center bg-dark">
@@ -11,7 +20,7 @@ function SongCard({artistName, imgCover, songName, album, price, releaseDate, au
                 <p className="card-text text-secondary">Album: {album}</p>
                 <p className="card-text text-secondary">Release Date: {releaseDate.split('T')[0]}</p>
                 <p className="card-text text-secondary">Price: {price}$</p>
-                <a href="#!" className="btn btn-outline-secondary rounded-0">Play this Track</a>
+                <a href="#!" className="btn btn-outline-secondary rounded-0" onClick={play}>Play / Pause</a>
             </div>
         </div>
     )
