@@ -1,4 +1,4 @@
 .App {
-  background: #3D3D3D;
-  height: 100vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,87,193,1) 35%, rgba(177,102,204,1) 63%, rgba(117,114,255,1) 82%, rgba(105,166,249,1) 91%);
 }
