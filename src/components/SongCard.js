@@ -1,4 +1,5 @@
 import React from 'react'
+import "./songCard.css";
 
 function SongCard({artistName, imgCover, songName, album, price, releaseDate, audio}) {
     let track = new Audio(audio)
@@ -12,7 +13,7 @@ function SongCard({artistName, imgCover, songName, album, price, releaseDate, au
     }
 
     return (
-        <div className="card text-center bg-dark">
+        <div className="card text-center bg-dark m-2">
             {imgCover !== undefined ? <img src={imgCover} alt={songName} /> : <img src="http://hosted.netro.ca/morplay/player/img/blankart.jpg" alt={songName}/>}
             <div className="card-body text-light">
                 <h4 className="card-title">{songName}</h4>
