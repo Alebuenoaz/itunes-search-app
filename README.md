@@ -15,6 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Basic Use
 You can search for your song by enter the name in the search bar and submitting by hitting
 ### `Enter`
+You can order alphabetically (asc or desc) the list of songs by pressing the button
+## `A-Z / Z-A`
 Also yo are able to play or pause a specific song with the button
 ### `Play/Pause`
 
